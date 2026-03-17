@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url("https://loremflickr.com/1600/900/NATURE,LANDSCAPE");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 140vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caixa-maior {
+    background-color: rgba(0,0, 0,9);
+    width: 90%;
+    max-width: 450px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.input-cidade{
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #7c7c7c20;
+    color: #fff;
+    font-size: 20px;
+    width: calc(100% -100px);
+}
+.botao {
+    padding: 10px;
+    border: none;
+    background-color: #7c7c7c20;
+    border-radius: 50%;
+    margin-left: 8px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.botao:hover {
+    background-color: #7c7c7c;
+    transform: scale(1.2);
+}
+.botao:active {
+    transform: scale(0.9);
+    opacity: 0.8;
+    background-color: aqua;
+}
+.botao.gravando {
+    background-color: rgb(14, 121, 252);
+    transform: scale(1.1);
+}
+.caixa-media {
+    margin-top: 30px;
+}
+.cidade{
+    font-size: 28px;   
+    color: #fff;
+}
+.temp{
+    font-size: 30px;
+    color: #fff;
+    margin-top: 10px;
+    font-weight: bold;
+
+}
+.umidade{
+    font-size: 18px;
+    color: #fff;
+}
+.vento{
+    font-size: 18px;
+    color: #fff;
+}
+.pressao{
+    font-size: 18px;
+    color: #fff;
+}
+.sensacao{
+    font-size: 18px;
+    color: #fff;
+}
+.nuvens{
+    font-size: 18px;
+    color: #fff;
+}
+.nascer{
+    font-size: 18px;
+    color: #fff;
+}
+.pôr{
+    font-size: 18px;
+    color: #fff;
+}
+.latitude{
+    font-size: 18px;
+    color: #fff;
+}
+.longitude{
+    font-size: 18px;
+    color: #fff;
+}
+.temp-max{
+    font-size: 18px;
+    color: #fff;
+}
+.temp-min{
+    font-size: 18px;
+    color: #fff;
+}
+.presenca{
+    font-size: 18px;
+    color: #fff;
+}
+.direcao{
+    font-size: 18px;
+    color: #fff;
+}
+.rajada{
+    font-size: 18px;
+    color: #fff;
+}
+
+.botao-voz {
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(14,121,252);
+    border: none;
+    cursor: pointer;
+}
+
+
+.descricao{
+    font-size: 18px;
+    color: #fff;
+}
+
+
+.botao-ia {
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(14,121,252);
+    border: none;
+    cursor: pointer;
+}
+.botao-ia:hover {
+    background-color: rgb(14,121,252,0.8);
+    transform: scale(1.05);
+}
+.botao-ia:active {
+    transform: scale(0.95);
+    opacity:0.8;
+}
+.resposta-ia {
+    margin-top: 15px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Media queries para compatibilidade com celular */
+@media (max-width: 768px) {
+    .caixa-maior {
+        padding: 15px;
+        border-radius: 15px;
+    }
+    
+    .input-cidade {
+        font-size: 16px; /* Evita zoom no iOS */
+        width: calc(100% - 80px);
+        padding: 8px;
+    }
+    
+    .botao {
+        padding: 8px;
+        margin-left: 5px;
+    }
+    
+    .botao img {
+        width: 25px;
+    }
+    
+    .cidade {
+        font-size: 24px;
+    }
+    
+    .temp {
+        font-size: 26px;
+        margin-top: 8px;
+    }
+    
+    .umidade, .descricao {
+        font-size: 16px;
+    }
+    
+    .botao-ia {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    .resposta-ia {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+}
