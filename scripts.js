@@ -4,7 +4,7 @@ let chaveIa="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"
 async function buscar() {
     let cidade = document.querySelector(".input-cidade").value;
     let caixa = document.querySelector(".caixa-media");
-    let chave = "5b4b5e26d8b5fc6f64fa56b3bc44349e";
+    let chave = "a0c752a01cc9150e18915a2e7c87c888";
     
 
     let endereco = `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${chave}&units=metric&lang=pt_br`;
