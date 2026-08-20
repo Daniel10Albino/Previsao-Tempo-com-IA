@@ -1,5 +1,5 @@
 
-let chaveIa="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"
+let chaveIa="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"
 
 async function buscar() {
     let cidade = document.querySelector(".input-cidade").value;
